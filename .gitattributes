@@ -1,0 +1,4 @@
+*.md text eol=lf
+SHA256SUMS text eol=lf
+*.svg -text
+*.pdf binary
