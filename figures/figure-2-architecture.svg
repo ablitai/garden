@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" role="img" aria-labelledby="title desc">
+  <title id="title">Evaluated host-managed architecture</title>
+  <desc id="desc">A host-prepared package contains model weights, runtime, guest code and boot image. The same physical host supplies identities, a trusted controller and broker, and agent VMs. Guests use the local model for a greeting and submit fixed requests; the controller applies policy and provisions descendants. Upstream model acquisition is not shown in the guest run.</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9" fill="none" stroke="#315b88" stroke-width="1.6"/></marker></defs>
+  <rect x="2" y="2" width="1096" height="336" rx="8" fill="#f7f9fb" stroke="#c8d3e1" stroke-width="2"/>
+  <text x="28" y="36" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#315b88">ONE PHYSICAL HOST / EVALUATED IMPLEMENTATION</text>
+  <g fill="#fff" stroke="#9caec0" stroke-width="2"><rect x="28" y="68" width="235" height="65" rx="6"/><rect x="28" y="164" width="235" height="65" rx="6"/><rect x="401" y="97" width="270" height="102" rx="6"/><rect x="823" y="97" width="249" height="102" rx="6"/><rect x="823" y="248" width="249" height="49" rx="6"/></g>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#17212a">
+    <g font-size="19" font-weight="700"><text x="145" y="94">Prepared package</text><text x="145" y="190">Preallocated identities</text><text x="536" y="128">Host controller + broker</text><text x="947" y="128">Agent virtual machines</text><text x="947" y="278">Launcher</text></g>
+    <g font-size="15" fill="#59636e"><text x="145" y="116">Model + runtime + guest code</text><text x="145" y="212">Host-supplied credentials</text><text x="536" y="151">Policy, queue, provisioning</text><text x="536" y="174">Broker can read messages</text><text x="947" y="151">Model: bounded greeting</text><text x="947" y="174">Fixed reproduction request</text></g>
+  </g>
+  <g stroke="#315b88" stroke-width="2" fill="none" marker-end="url(#a)"><path d="M266 101 H395"/><path d="M266 196 H395"/><path d="M676 132 H817"/><path d="M817 174 H676"/><path d="M947 244 V204"/></g>
+  <g font-family="Arial,sans-serif" font-size="15" fill="#315b88" text-anchor="middle"><text x="746" y="121">provision / response</text><text x="746" y="196">guest request</text></g>
+  <text x="962" y="228" font-family="Arial,sans-serif" font-size="15" fill="#315b88">starts seed</text>
+  <text x="28" y="271" font-family="Arial,sans-serif" font-size="17" fill="#4f5964">Model prepared before run; the recorded package transfer was host-local.</text>
+  <text x="28" y="300" font-family="Arial,sans-serif" font-size="17" fill="#4f5964">No guest internet download or independently acquired target is established.</text>
+</svg>

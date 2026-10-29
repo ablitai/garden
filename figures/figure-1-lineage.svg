@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 250" role="img" aria-labelledby="title desc">
+  <title id="title">Recorded host-managed lineage</title>
+  <desc id="desc">On one physical host, a launcher starts the seed. The seed requests a child from the host controller, which provisions the child. The child requests a grandchild from the same controller, which provisions it. A shared pinned package and preallocated identities are supplied by the host. The terminal request is refused at the generation limit.</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9" fill="none" stroke="#315b88" stroke-width="1.6"/></marker></defs>
+  <rect x="2" y="2" width="1096" height="246" rx="8" fill="#f7f9fb" stroke="#c8d3e1" stroke-width="2"/>
+  <text x="28" y="36" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#315b88">OBSERVED IN ONE HOST-MANAGED RUN</text>
+  <text x="28" y="65" font-family="Arial,sans-serif" font-size="16" fill="#505b67">Launcher starts the seed; all descendants use host-supplied resources.</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g fill="#fff" stroke="#9caec0" stroke-width="2">
+      <rect x="28" y="98" width="150" height="70" rx="6"/><rect x="242" y="98" width="150" height="70" rx="6"/>
+      <rect x="455" y="98" width="150" height="70" rx="6"/><rect x="668" y="98" width="150" height="70" rx="6"/>
+      <rect x="882" y="98" width="190" height="70" rx="6"/>
+    </g>
+    <g fill="#17212a" font-size="18" font-weight="700"><text x="103" y="126">Seed guest</text><text x="317" y="126">Controller</text><text x="530" y="126">Child guest</text><text x="743" y="126">Controller</text><text x="977" y="126">Grandchild guest</text></g>
+    <g fill="#59636e" font-size="16"><text x="103" y="151">generation 0</text><text x="317" y="151">same host</text><text x="530" y="151">generation 1</text><text x="743" y="151">same host</text><text x="977" y="151">generation 2</text></g>
+    <g fill="#315b88" font-size="15"><text x="210" y="113">request</text><text x="423" y="113">launch</text><text x="636" y="113">request</text><text x="850" y="113">launch</text></g>
+    <g stroke="#315b88" stroke-width="2" fill="none" marker-end="url(#a)"><path d="M183 135 H237"/><path d="M397 135 H450"/><path d="M610 135 H663"/><path d="M823 135 H877"/></g>
+  </g>
+  <text x="28" y="205" font-family="Arial,sans-serif" font-size="17" fill="#4f5964">The controller uses a shared package and preallocated identities. The next request is denied.</text>
+  <text x="28" y="230" font-family="Arial,sans-serif" font-size="17" fill="#4f5964">Both controller boxes represent the same host controller; no direct source transfer is shown.</text>
+</svg>

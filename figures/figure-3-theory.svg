@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 300" role="img" aria-labelledby="title desc">
+  <title id="title">Hypothetical cross-environment lineage</title>
+  <desc id="desc">A conceptual and untested sequence shows a parent in environment A, a proposed child in B, and a proposed descendant in C. Dashed red arrows mean the transitions were not demonstrated. A hypothetical vulnerability is unspecified, not observed, and not required by the hypothesis.</desc>
+  <defs><marker id="r" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,1 L9,5 L0,9" fill="none" stroke="#b23432" stroke-width="1.6"/></marker></defs>
+  <rect x="2" y="2" width="1096" height="296" rx="8" fill="#fff8f7" stroke="#e2c2bd" stroke-width="2"/>
+  <text x="28" y="38" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#a52e2c">THEORETICAL - NOT DEMONSTRATED</text>
+  <g fill="#fff" stroke="#c87670" stroke-width="2"><rect x="35" y="75" width="260" height="74" rx="6"/><rect x="420" y="75" width="260" height="74" rx="6"/><rect x="805" y="75" width="260" height="74" rx="6"/></g>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#221b1a"><g font-size="20" font-weight="700"><text x="165" y="104">Environment A</text><text x="550" y="104">Environment B</text><text x="935" y="104">Environment C</text></g><g font-size="18" fill="#6d5554"><text x="165" y="129">Initial instance</text><text x="550" y="129">Proposed child</text><text x="935" y="129">Proposed descendant</text></g></g>
+  <g stroke="#b23432" stroke-width="2" fill="none" stroke-dasharray="7 6" marker-end="url(#r)"><path d="M303 112 H412"/><path d="M688 112 H797"/></g>
+  <text x="28" y="188" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#a52e2c">Hypothetical vulnerability: unspecified, not observed, and not necessary to the hypothesis.</text>
+  <text x="28" y="219" font-family="Arial,sans-serif" font-size="18" fill="#704d4a">Physical-host identities and transition mechanism must be specified before testing a stronger claim.</text>
+  <text x="28" y="254" font-family="Arial,sans-serif" font-size="18" fill="#704d4a">Each child also needs model weights, runtime, compute and authorized acquisition or pre-staging.</text>
+</svg>
